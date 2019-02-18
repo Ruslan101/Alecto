@@ -1,7 +1,194 @@
+$width: 1000px;
+* {
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	background: url("../img/header_background.png") 100% 100% no-repeat;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	& > .wrapper {
+		width: #{ $width };
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		& > .menu {
+			display: flex;
+			flex-direction: row;
+			align-content: center;
+
+			& > p {
+				margin-right: 35px;
+				font-family: Raleway-Bold;
+				font-size: 14px;
+				color: white;
+
+				&:hover {
+					color: #17daa3;
+				}
+			}
+		}
+		& > .logo, .menu {
+			margin-top: 30px;
+			cursor: pointer;
+		}
+	}
+	& > .template {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		margin: 250px 0px;
+
+		& > p:first-child {
+			color: white;
+			font-size: 46px;
+			font-family: Raleway-Thin;
+			text-align: center;
+			margin-bottom: 25px;
+
+			& > span {
+				font-family: Raleway-Bold;
+			}
+		}
+		& > p ~ p {
+			color: white;
+			font-family: ProximaNova-Light;
+			font-size: 19px;
+			text-align: center;
+			margin-bottom: 35px;
+		}
+		& > button {
+			background: none;
+			border: 2px white solid;
+			border-radius: 35px;
+			width: 140px;
+			height: 40px;
+			color: white;
+			font-size: 14px;
+			font-family: Raleway-Bold;
+			cursor: pointer;
+			&:hover {
+				color: #17daa3;
+				border-color: #17dab9;
+			}
+		}
+	}
+
+}
+main {
+	width: 100%;
+
+	& > .aboutus {
+		width: #{ $width };
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: auto;
+
+		& > p:first-child {
+			color: #576671;
+			font-size: 60px;
+			font-family: Raleway-ExtraLight;
+			margin: 100px 0px 40px;
+		}
+		& > .border {
+			width: 30px;
+			border: 2px solid #17daa3;
+			margin-bottom: 40px;
+		}
+		& > p:last-of-type {
+			color: #87949e;
+			font-size: 18px;
+			font-family: ProximaNova-Regular;
+			margin-bottom: 160px;
+		}
+		& > .wrapper {
+			display: flex;
+			flex-direction: row;
+
+			& > .item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				& > img {
+					margin-bottom: 80px;
+					cursor: pointer;
+				}
+				& > p {
+					text-align: center;
+					color: black;
+					font-size: 25px;
+					font-family: Raleway-Medium;
+					margin-bottom: 45px;
+				}
+				& > p:last-of-type {
+					color: #87949e;
+					font-size: 18px;
+					font-family: ProximaNova-Regular;
+				}
+			}
+		}
+		& > button {
+			color: white;
+			width: 180px;
+			height: 45px;
+			background-color: #17daa3;
+			border-radius: 35px;
+			border: 1px solid #17daa3;
+			cursor: pointer;
+			margin-bottom: 100px;
+			margin-top: 80px;
+
+			&:hover {
+				color: #87949e;
+				border-color: #edeff1;
+				background-color: #edeff1;
+				transition: 0.4s;
+			}
+		}
+	}
+}
 
 
-div {
-     p {
-        background-color: red;
-    }
+
+
+
+
+
+
+
+
+
+/* Fonts including */
+@font-face {
+	src: url("fonts/Raleway-Bold.ttf");
+	font-family: Raleway-Bold;
+}
+@font-face {
+	src: url("fonts/Raleway-Thin.ttf");
+	font-family: Raleway-Thin;
+}
+@font-face {
+	src: url("fonts/ProximaNova Light.ttf");
+	font-family: ProximaNova-Light
+}
+@font-face {
+	src: url("fonts/Raleway-ExtraLight.ttf");
+	font-family: Raleway-ExtraLight;
+}
+@font-face {
+	src: url("../css/fonts/ProximaNova Regular.ttf");
+	font-family: ProximaNova-Regular;
+}
+@font-face {
+	src: url("../css/fonts/Raleway-Medium.ttf");
+	font-family: Raleway-Medium;
 }
