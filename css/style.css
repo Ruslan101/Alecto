@@ -145,6 +145,229 @@ main > .aboutus > button:hover {
   background-color: #edeff1;
   transition: 0.4s;
 }
+main > .brand {
+  background-color: #f9f9fa;
+  width: 100%;
+}
+main > .brand > .brand_container {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+main > .brand > .brand_container > .photo > img {
+  width: 500px;
+  cursor: pointer;
+}
+main > .brand > .brand_container > .description {
+  width: 440px;
+}
+main > .brand > .brand_container > .description > p {
+  color: #576671;
+  font-size: 50px;
+  font-family: Raleway-ExtraLight;
+  margin-bottom: 60px;
+}
+main > .brand > .brand_container > .description > p:last-of-type {
+  color: #87949e;
+  font-size: 18px;
+  font-family: ProximaNova-Regular;
+  margin-bottom: 65px;
+}
+main > .brand > .brand_container > .description > button {
+  color: white;
+  background-color: #17daa3;
+  border-radius: 35px;
+  border: 1px solid #17daa3;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Raleway-Bold;
+  width: 160px;
+  height: 35px;
+}
+main > .brand > .brand_container > .description > button:hover {
+  color: #87949e;
+  border-color: #edeff1;
+  background-color: #edeff1;
+  transition: 0.4s;
+}
+main .Opinions {
+  width: 100%;
+  background-image: url("../img/optinions.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .Opinions > img {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+main .Opinions > p {
+  color: white;
+  font-size: 30px;
+  font-family: Raleway-Light;
+  margin-bottom: 45px;
+}
+main .Opinions > p > span {
+  color: #17daa3;
+}
+main .Opinions > p:last-of-type {
+  color: #535353;
+  font-size: 18px;
+  font-family: Raleway-Light;
+  margin-bottom: 100px;
+}
+main > .ourservices {
+  background-color: #f9f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > .ourservices > .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+}
+main > .ourservices > .main > p {
+  color: #576671;
+  font-size: 50px;
+  font-family: Raleway-Light;
+  margin: 100px 0px 40px;
+}
+main > .ourservices > .main > .border {
+  width: 30px;
+  height: 1px;
+  background-color: #17daa3;
+}
+main > .ourservices > .main > p:last-of-type {
+  color: #87949e;
+  font-size: 18px;
+  font-family: ProximaNova-Regular;
+  margin: 70px 0px 100px;
+}
+main > .ourservices > .wrap ~ .wrap {
+  margin-bottom: 100px;
+}
+main > .ourservices > .wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+main > .ourservices > .wrap > .item {
+  display: flex;
+  flex-direction: row;
+  width: 470px;
+}
+main > .ourservices > .wrap > .item > div > img {
+  margin-right: 30px;
+  width: 70px;
+}
+main > .ourservices > .wrap > .item > div ~ div {
+  display: flex;
+  flex-direction: column;
+}
+main > .ourservices > .wrap > .item > div ~ div > p {
+  color: #576671;
+  font-size: 50px;
+  font-family: Raleway-ExtraLight;
+  margin-bottom: 40px;
+}
+main > .ourservices > .wrap > .item > div ~ div > p:last-of-type {
+  color: #87949e;
+  font-size: 15px;
+  font-family: ProximaNova-Regular;
+  line-height: 25px;
+}
+main > .pricing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: #f9f9fa;
+  border-top: 1px #17daa3 solid;
+}
+main > .pricing > p {
+  color: #576671;
+  font-size: 50px;
+  font-family: Raleway-ExtraLight;
+  margin-top: 100px;
+}
+main > .pricing > .border {
+  width: 30px;
+  height: 1px;
+  background-color: #17daa3;
+  margin: 30px 0px 40px;
+}
+main > .pricing > p:last-of-type {
+  color: #87949e;
+  font-size: 18px;
+  font-family: ProximaNova-Regular;
+  margin-bottom: 100px;
+  margin-top: 0px;
+}
+main > .pricing > .container_for-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+  margin-bottom: 100px;
+}
+main > .pricing > .container_for-item > .item {
+  background-color: white;
+  border-radius: 4px;
+  width: 235px;
+}
+main > .pricing > .container_for-item > .item > div:first-child {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #eeeff1;
+}
+main > .pricing > .container_for-item > .item > div:first-child > p {
+  color: #17daa3;
+  font-size: 40px;
+  font-family: ProximaNova-Light;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+main > .pricing > .container_for-item > .item > div:first-child > p:last-of-type {
+  color: #87949e;
+  font-size: 14.5px;
+  font-family: ProximaNova-Regular;
+}
+main > .pricing > .container_for-item > .item > .second_section > p:first-child {
+  margin-top: 50px;
+}
+main > .pricing > .container_for-item > .item > .second_section > p {
+  color: #87949e;
+  font-size: 13px;
+  font-family: ProximaNova-Regular;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+main > .pricing > .container_for-item > .item > .second_section > p:last-child {
+  margin-bottom: 35px;
+}
+main > .pricing > .container_for-item > .item > div:last-of-type {
+  background-color: #17daa3;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+main > .pricing > .container_for-item > .item > div:last-of-type > p {
+  color: white;
+  font-family: ProximaNova Bold;
+  font-size: 14px;
+  margin-top: 0px;
+}
 
 /* Fonts including */
 @font-face {
@@ -164,12 +387,20 @@ main > .aboutus > button:hover {
   font-family: Raleway-ExtraLight;
 }
 @font-face {
-  src: url("../css/fonts/ProximaNova Regular.ttf");
+  src: url("fonts/ProximaNova Regular.ttf");
   font-family: ProximaNova-Regular;
 }
 @font-face {
-  src: url("../css/fonts/Raleway-Medium.ttf");
+  src: url("fonts/Raleway-Medium.ttf");
   font-family: Raleway-Medium;
+}
+@font-face {
+  src: url("fonts/Raleway-Light.ttf");
+  font-family: Raleway-Light;
+}
+@font-face {
+  src: url("fonts/ProximaNova Bold.otf");
+  font-family: ProximaNova Bold;
 }
 
 /*# sourceMappingURL=style.css.map */

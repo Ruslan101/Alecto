@@ -155,6 +155,246 @@ main {
 			}
 		}
 	}
+	& > .brand {
+		background-color: #f9f9fa;
+		width: 100%;
+
+		& > .brand_container {
+			width: #{ $width };
+			margin: auto;
+			display: flex;
+			flex-direction: row;
+			padding-top: 100px;
+			padding-bottom: 100px;
+			align-items: center;
+			justify-content: space-between;
+
+			& > .photo > img {
+				width: 500px;
+				cursor: pointer;
+			}
+			& > .description {
+				width: 440px;
+
+				& > p {
+					color: #576671;
+					font-size: 50px;
+					font-family: Raleway-ExtraLight;
+					margin-bottom: 60px;
+				}
+				& > p:last-of-type {
+					color: #87949e;
+					font-size: 18px;
+					font-family: ProximaNova-Regular;
+					margin-bottom: 65px;
+				}
+				& > button {
+					color: white;
+					background-color: #17daa3;
+					border-radius: 35px;
+					border: 1px solid #17daa3;
+					cursor: pointer;
+					font-size: 14px;
+					font-family: Raleway-Bold;
+					width: 160px;
+					height: 35px;
+
+					&:hover {
+						color: #87949e;
+						border-color: #edeff1;
+						background-color: #edeff1;
+						transition: 0.4s;
+					}
+				}
+			}
+		}
+	}
+	.Opinions {
+		width: 100%;
+		background-image: url("../img/optinions.png");
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& > img {
+			margin-top: 100px;
+			margin-bottom: 40px;
+		}
+		& > p {
+			color: white;
+			font-size: 30px;
+			font-family: Raleway-Light;
+			margin-bottom: 45px;
+
+			& > span {
+				color: #17daa3;
+			}
+		}
+		& > p:last-of-type {
+			color: #535353;
+			font-size: 18px;
+			font-family: Raleway-Light;
+			margin-bottom: 100px;
+		}
+	}
+	& > .ourservices {
+		background-color: #f9f9fa;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& > .main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: #{$width};
+
+			& > p {
+				color: #576671;
+				font-size: 50px;
+				font-family: Raleway-Light;
+				margin: 100px 0px 40px;
+			}
+			& > .border {
+				width: 30px;
+				height: 1px;
+				background-color: #17daa3;
+			}
+			& > p:last-of-type {
+				color: #87949e;
+				font-size: 18px;
+				font-family: ProximaNova-Regular;
+				margin: 70px 0px 100px;
+			}
+		}
+		& > .wrap ~ .wrap {
+			margin-bottom: 100px;
+		}
+		& > .wrap {
+			display: flex;
+			justify-content: space-between;
+			width: #{$width};
+
+			& > .item {
+				display: flex;
+				flex-direction: row;
+				width: 470px;
+				
+				& > div > img {
+					margin-right: 30px;
+					width: 70px;
+				}
+				& > div ~ div {
+					display: flex;
+					flex-direction: column;
+					
+					& > p {
+						color: #576671;
+						font-size: 50px;
+						font-family: Raleway-ExtraLight;
+						margin-bottom: 40px;
+					}
+					& > p:last-of-type {
+						color: #87949e;
+						font-size: 15px;
+						font-family: ProximaNova-Regular;
+						line-height: 25px;
+					}
+				}
+			}
+		}
+	}
+	& > .pricing {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		background-color: #f9f9fa;
+		border-top: 1px #17daa3 solid;
+
+		& > p {
+			color: #576671;
+			font-size: 50px;
+			font-family: Raleway-ExtraLight;
+			margin-top: 100px;
+		}
+		& > .border {
+			width: 30px;
+			height: 1px;
+			background-color: #17daa3;
+			margin: 30px 0px 40px;
+		}
+		& > p:last-of-type {
+			color: #87949e;
+			font-size: 18px;
+			font-family: ProximaNova-Regular;
+			margin-bottom: 100px;
+			margin-top: 0px;
+		}
+		& > .container_for-item {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: #{$width};
+			margin-bottom: 100px;
+
+			& > .item {
+				background-color: white;
+				border-radius: 4px;
+				width: 235px;
+				
+				& > div:first-child {
+					padding-bottom: 35px;
+					border-bottom: 1px solid #eeeff1;
+				}
+				& > div:first-child > p {
+					color: #17daa3;
+					font-size: 40px;
+					font-family: ProximaNova-Light;
+					margin-top: 30px;
+					margin-left: 15px;
+				}
+				& > div:first-child > p:last-of-type {
+					color: #87949e;
+					font-size: 14.5px;
+					font-family: ProximaNova-Regular;
+				}
+				& > .second_section {
+					& > p:first-child {
+						margin-top: 50px;
+					}
+					& > p {
+						color: #87949e;
+						font-size: 13px;
+						font-family: ProximaNova-Regular;
+						margin-bottom: 20px;
+						margin-left: 15px;
+					}
+					& > p:last-child {
+						margin-bottom: 35px;
+					}
+				}
+				& > div:last-of-type {
+					background-color: #17daa3;
+					display: flex;
+					flex-direction: row;
+					align-content: center;
+					justify-content: space-around;
+					height: 50px;
+					align-items: center;
+					letter-spacing: 5px;
+					cursor: pointer;
+
+					& > p {
+						color: white;
+						font-family: ProximaNova Bold;
+						font-size: 14px;
+						margin-top: 0px;
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -178,17 +418,25 @@ main {
 }
 @font-face {
 	src: url("fonts/ProximaNova Light.ttf");
-	font-family: ProximaNova-Light
+	font-family: ProximaNova-Light;
 }
 @font-face {
 	src: url("fonts/Raleway-ExtraLight.ttf");
 	font-family: Raleway-ExtraLight;
 }
 @font-face {
-	src: url("../css/fonts/ProximaNova Regular.ttf");
+	src: url("fonts/ProximaNova Regular.ttf");
 	font-family: ProximaNova-Regular;
 }
 @font-face {
-	src: url("../css/fonts/Raleway-Medium.ttf");
+	src: url("fonts/Raleway-Medium.ttf");
 	font-family: Raleway-Medium;
+}
+@font-face {
+	src: url("fonts/Raleway-Light.ttf");
+	font-family: Raleway-Light;
+}
+@font-face {
+	src: url("fonts/ProximaNova Bold.otf");
+	font-family: ProximaNova Bold;
 }
