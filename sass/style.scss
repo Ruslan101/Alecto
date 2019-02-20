@@ -29,7 +29,7 @@ header {
 				color: white;
 
 				&:hover {
-					color: #17daa3;
+					color: #abffe7;
 				}
 			}
 		}
@@ -310,7 +310,6 @@ main {
 		width: 100%;
 		align-items: center;
 		background-color: #f9f9fa;
-		border-top: 1px #17daa3 solid;
 
 		& > p {
 			color: #576671;
@@ -395,19 +394,133 @@ main {
 			}
 		}
 	}
+	& > .map {
+		background-color: white;
+		width: 100%;
+
+		& > .container {
+			width: #{$width};
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			margin: auto;
+
+			& > div:first-of-type {
+				& > p:first-of-type {
+					color: #576671;
+					font-size: 50px;
+					font-family: Raleway-ExtraLight;
+					margin: 100px 0px 50px;
+				}
+				& > p:last-of-type {
+					color: #87949e;
+					font-size: 14px;
+					font-family: ProximaNova-Regular;
+					margin-bottom: 50px;
+				}
+				& > button {
+					color: white;
+					background-color: #17daa3;
+					border-radius: 35px;
+					border: 1px solid #17daa3;
+					cursor: pointer;
+					font-size: 12px;
+					font-family: Raleway-Bold;
+					width: 125px;
+					height: 30px;
+
+					&:hover {
+						color: #87949e;
+						border-color: #edeff1;
+						background-color: #edeff1;
+						transition: 0.4s;
+					}
+				}
+			}
+			& > div:last-of-type {
+				& > img {
+					width: 550px;
+					margin: 70px 0px;
+					cursor: pointer;
+				}
+			} 
+		}
+	}
+	.template {
+		width: 100%;
+		background: url("../img/Try our template.png") 50% 40%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		& > p {
+			color: white;
+			font-family: Raleway-ExtraLight;
+			font-size: 50px;
+			text-align: center;
+			padding: 150px 0px 50px;
+
+			& > span {
+				font-family: Raleway-Bold;
+			}
+		}
+		& > button {
+			color: white;
+			background-color: #17daa3;
+			border-radius: 35px;
+			border: 1px solid #17daa3;
+			cursor: pointer;
+			font-size: 12px;
+			font-family: Raleway-Bold;
+			width: 125px;
+			height: 30px;
+			margin: 0px auto 150px;
+
+			&:hover {
+				color: #87949e;
+				border-color: #edeff1;
+				background-color: #edeff1;
+				transition: 0.4s;
+			}
+		}
+	}
 }
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: white;
+	width: #{$width};
+	margin: auto;
 
+	& > div {
+		margin: 40px 0px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	& > div:first-of-type > img {
+		margin-right: 20px;
+	}
+	& > div:first-of-type > p {
+		color: #87949e;
+		font-size: 15px;
+		font-family: ProximaNova-Regular;
+	}
+	& > div:last-of-type {
+		& > p {
+			color: #87949e;
+			font-size: 15px;
+			margin-right: 20px;
+			cursor: pointer;
 
-
-
-
-
-
-
-
-
-
-/* Fonts including */
+			&:hover {
+				color: #07fab4;
+			}
+		}
+	}
+}
+//Fonts including
 @font-face {
 	src: url("fonts/Raleway-Bold.ttf");
 	font-family: Raleway-Bold;

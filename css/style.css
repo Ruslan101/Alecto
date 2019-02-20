@@ -29,7 +29,7 @@ header > .wrapper > .menu > p {
   color: white;
 }
 header > .wrapper > .menu > p:hover {
-  color: #17daa3;
+  color: #abffe7;
 }
 header > .wrapper > .logo, header > .wrapper .menu {
   margin-top: 30px;
@@ -289,7 +289,6 @@ main > .pricing {
   width: 100%;
   align-items: center;
   background-color: #f9f9fa;
-  border-top: 1px #17daa3 solid;
 }
 main > .pricing > p {
   color: #576671;
@@ -368,8 +367,119 @@ main > .pricing > .container_for-item > .item > div:last-of-type > p {
   font-size: 14px;
   margin-top: 0px;
 }
+main > .map {
+  background-color: white;
+  width: 100%;
+}
+main > .map > .container {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+}
+main > .map > .container > div:first-of-type > p:first-of-type {
+  color: #576671;
+  font-size: 50px;
+  font-family: Raleway-ExtraLight;
+  margin: 100px 0px 50px;
+}
+main > .map > .container > div:first-of-type > p:last-of-type {
+  color: #87949e;
+  font-size: 14px;
+  font-family: ProximaNova-Regular;
+  margin-bottom: 50px;
+}
+main > .map > .container > div:first-of-type > button {
+  color: white;
+  background-color: #17daa3;
+  border-radius: 35px;
+  border: 1px solid #17daa3;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Raleway-Bold;
+  width: 125px;
+  height: 30px;
+}
+main > .map > .container > div:first-of-type > button:hover {
+  color: #87949e;
+  border-color: #edeff1;
+  background-color: #edeff1;
+  transition: 0.4s;
+}
+main > .map > .container > div:last-of-type > img {
+  width: 550px;
+  margin: 70px 0px;
+  cursor: pointer;
+}
+main .template {
+  width: 100%;
+  background: url("../img/Try our template.png") 50% 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .template > p {
+  color: white;
+  font-family: Raleway-ExtraLight;
+  font-size: 50px;
+  text-align: center;
+  padding: 150px 0px 50px;
+}
+main .template > p > span {
+  font-family: Raleway-Bold;
+}
+main .template > button {
+  color: white;
+  background-color: #17daa3;
+  border-radius: 35px;
+  border: 1px solid #17daa3;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Raleway-Bold;
+  width: 125px;
+  height: 30px;
+  margin: 0px auto 150px;
+}
+main .template > button:hover {
+  color: #87949e;
+  border-color: #edeff1;
+  background-color: #edeff1;
+  transition: 0.4s;
+}
 
-/* Fonts including */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  width: 1000px;
+  margin: auto;
+}
+footer > div {
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer > div:first-of-type > img {
+  margin-right: 20px;
+}
+footer > div:first-of-type > p {
+  color: #87949e;
+  font-size: 15px;
+  font-family: ProximaNova-Regular;
+}
+footer > div:last-of-type > p {
+  color: #87949e;
+  font-size: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+footer > div:last-of-type > p:hover {
+  color: #07fab4;
+}
+
 @font-face {
   src: url("fonts/Raleway-Bold.ttf");
   font-family: Raleway-Bold;
