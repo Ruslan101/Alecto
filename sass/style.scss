@@ -1,4 +1,5 @@
-$width: 1000px;
+$width: 1000px; // Desktop min widtch
+$i: !important;
 * {
 	margin: 0px;
 	padding: 0px;
@@ -16,6 +17,30 @@ header {
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+
+		@media (max-width: #{$width}) {
+			width: 100%;
+
+			@media (max-width: 580px) {
+				& > .logo {
+					display: none;
+				}
+				img[alt='search'] {
+					display: none;
+				}
+				& > .menu > p:last-of-type {
+					margin-right: 0px;
+				}
+				justify-content: center;
+			}
+			& > .menu > p {
+				margin-right: 0px #{$i}; 
+			}
+			& > .menu {
+				width: 80% #{$i};
+				justify-content: space-between;
+			}
+		}
 
 		& > .menu {
 			display: flex;
@@ -91,6 +116,30 @@ main {
 		flex-direction: column;
 		align-items: center;
 		margin: auto;
+		text-align: center;
+
+		@media (max-width: #{$width}) {
+			width: 100%;
+
+			& > .wrapper {
+				flex-direction: column #{$i};
+				align-items: center;
+			}
+			& > p:first-child {
+				margin-top: 50px #{$i};
+			}
+			& > p:last-of-type {
+				margin-bottom: 100px #{$i};
+			}
+			& > .wrapper > .item > img {
+				margin-bottom: 30px #{$i};
+			}
+			& > button {
+				margin: 40px 0px 50px #{$i};
+				width: 80% #{$i};
+				font-size: 20px;
+			}
+		}
 
 		& > p:first-child {
 			color: #576671;
@@ -159,6 +208,31 @@ main {
 		background-color: #f9f9fa;
 		width: 100%;
 
+		@media (max-width: #{$width}) {
+			& > .brand_container {
+				width: 100% #{$i};
+				flex-direction: column #{$i};
+				padding: 50px 0px #{$i};
+
+				& > .photo {
+					display: flex;
+					justify-content: center;
+				}
+
+				& > .description {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					width: 90% #{$i};
+
+					& > button {
+						width: 80% #{$i};
+						font-size: 18px #{$i};
+					}
+				}
+			}
+		}
 		& > .brand_container {
 			width: #{ $width };
 			margin: auto;
@@ -172,6 +246,9 @@ main {
 			& > .photo > img {
 				width: 500px;
 				cursor: pointer;
+				@media (max-width: 500px) {
+					width: 80% #{$i};
+				}
 			}
 			& > .description {
 				width: 440px;
@@ -216,6 +293,17 @@ main {
 		flex-direction: column;
 		align-items: center;
 
+		@media (max-width: #{$width}) {
+			text-align: center;
+
+			& > img {
+				margin-top: 50px #{$i};
+			}
+			& > p:last-of-type {
+				margin-bottom: 60px #{$i};
+			}
+		}
+
 		& > img {
 			margin-top: 100px;
 			margin-bottom: 40px;
@@ -242,6 +330,32 @@ main {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+		@media (max-width: #{$width}) {
+			& > div {
+				width: 100% #{$i};
+			}
+			& > .main > p {
+				margin: 50px 0px 25px #{$i};
+			}
+			&  > .main > p:last-of-type {
+				text-align: center;
+			}
+			& > .wrap {
+				flex-direction: column #{$i};
+				align-items: center;
+			}
+			& > .wrap ~ .wrap {
+				margin-bottom: 20px #{$i};
+			}
+			& > .wrap > .item {
+				width: 80% #{$i};
+
+				& > div ~ div > p {
+					font-size: 190% #{$i};
+				}
+			}
+		}
 
 		& > .main {
 			display: flex;
@@ -296,7 +410,7 @@ main {
 					}
 					& > p:last-of-type {
 						color: #87949e;
-						font-size: 15px;
+						font-size: 15px #{$i};
 						font-family: ProximaNova-Regular;
 						line-height: 25px;
 					}
@@ -310,6 +424,28 @@ main {
 		width: 100%;
 		align-items: center;
 		background-color: #f9f9fa;
+
+		@media (max-width: #{$width}) {
+			& > p:first-of-type {
+				margin: 50px 0px 0px  #{$i};
+			}
+			& > p:last-of-type {
+				margin-bottom: 50px #{$i};
+				text-align: center;
+			}
+			& > .container_for-item {
+				flex-direction: column #{$i};
+				width: 100% #{$i};
+				align-items: center;
+
+				& > .item {
+					margin-bottom: 50px;
+				}
+				& > .item:last-of-type {
+					margin: 0px;
+				}
+			}
+		}
 
 		& > p {
 			color: #576671;
@@ -398,6 +534,37 @@ main {
 		background-color: white;
 		width: 100%;
 
+		@media (max-width: #{$width}) {
+			& > .container {
+				width: 100% #{$i};
+				flex-direction: column #{$i};
+				justify-content: center;
+
+				& > div {
+					margin: auto;
+					text-align: center;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					& > p {
+						width: 80%;
+					}
+					& > p:first-of-type {
+						margin: 50px 0px 30px #{$i};
+					}
+					& > button {
+						width: 75% #{$i};
+						font-size: 18px #{$i};
+						height: 40px #{$i};
+					}
+				}
+				& > div > img {
+					width: 80% #{$i};
+				}
+			}
+		}
+
 		& > .container {
 			width: #{$width};
 			display: flex;
@@ -453,6 +620,18 @@ main {
 		align-items: center;
 		flex-direction: column;
 
+		@media (max-width: #{$width}) {
+			& > p {
+				padding-top: 75px #{$i};
+			}
+			& > button {
+				margin-bottom: 75px #{$i};
+				width: 80% #{$i};
+				font-size: 17px #{$i};
+				height: 35px #{$i};
+			}
+		}
+
 		& > p {
 			color: white;
 			font-family: Raleway-ExtraLight;
@@ -492,6 +671,16 @@ footer {
 	background-color: white;
 	width: #{$width};
 	margin: auto;
+
+	@media (max-width: #{$width}) {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+
+		& > div:first-of-type {
+			margin-bottom: 15px;
+		}
+	}
 
 	& > div {
 		margin: 40px 0px;
